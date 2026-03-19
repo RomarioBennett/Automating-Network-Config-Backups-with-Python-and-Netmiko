@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Network Configuration Backup Tool
-Author: Your Name
+Author: Romario Bennett
 Description:
     Connects to Cisco IOS devices via SSH, captures show commands,
     and archives timestamped backups with structured logging.
