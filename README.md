@@ -8,13 +8,13 @@ A production-grade Python tool for automating configuration backups across Cisco
 
 ## Features
 
-- **Concurrent SSH sessions** — backs up multiple devices simultaneously using `ThreadPoolExecutor`
-- **YAML inventory** — devices, credentials, and commands defined externally; no hardcoded values in code
-- **Full config capture** — handles Cisco IOS pagination reliably with `terminal length 0` + `terminal width 0`, and uses timing-based reads for large outputs like `sh run`
-- **Change detection** — automatically diffs each backup against the previous run and saves a `.diff` file when changes are detected
-- **Structured logging** — timestamped logs written simultaneously to console and a rotating log file
-- **CLI interface** — configurable inventory path, output directory, and worker count via `argparse`
-- **Cross-platform** — tested on Windows (PowerShell) and Linux; UTF-8 safe logging
+- **Concurrent SSH sessions** :backs up multiple devices simultaneously using `ThreadPoolExecutor`
+- **YAML inventory**: devices, credentials, and commands defined externally; no hardcoded values in code
+- **Full config capture**: handles Cisco IOS pagination reliably with `terminal length 0` + `terminal width 0`, and uses timing-based reads for large outputs like `sh run`
+- **Change detection**: automatically diffs each backup against the previous run and saves a `.diff` file when changes are detected
+- **Structured logging**: timestamped logs written simultaneously to console and a rotating log file
+- **CLI interface**: configurable inventory path, output directory, and worker count via `argparse`
+- **Cross-platform**: tested on Windows (PowerShell) and Linux; UTF-8 safe logging
 
 ---
 
@@ -22,7 +22,7 @@ A production-grade Python tool for automating configuration backups across Cisco
 
 ```
 cisco-netbackup/
-├── network_backup.py       # Main script (not publicly distributed)
+├── network_backup.py       # Main script
 ├── inventory.yaml          # Device inventory template
 ├── requirements.txt        # Python dependencies
 ├── .gitignore              # Excludes backups, logs, and secrets
@@ -172,7 +172,5 @@ Full implementation walkthrough, design decisions, and key library explanations:
 
 ## Author
 
-**Romario Bennett** — Network & Cloud Engineer, Kingston, Jamaica
-
-[![Medium](https://img.shields.io/badge/Medium-@romario__bennett-black?logo=medium)](https://medium.com/@romario_bennett)
+**Romario Bennett** — Network & Security Engineer
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/romario-bennett)
