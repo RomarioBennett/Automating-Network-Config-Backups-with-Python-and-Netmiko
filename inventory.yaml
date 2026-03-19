@@ -1,0 +1,25 @@
+# ─── Network Backup Inventory Template ──────────────────────────────────────
+#
+# SECURITY: Do NOT commit this file with real credentials.
+# Use environment variables or a secrets manager in production.
+# This file is excluded from git by default via .gitignore.
+#
+# device_type options: cisco_ios, cisco_nxos, cisco_asa, aruba_os, juniper_junos
+# Full list: https://github.com/ktbyers/netmiko/blob/develop/PLATFORMS.md
+
+credentials:
+  username: your_username
+  password: your_password
+  enable_secret: ""         # Leave as "" if user has privilege 15 or no enable password
+  device_type: cisco_ios
+
+commands:
+  - sh run
+  - sh ip int brief
+  - sh version
+  - sh cdp neighbors detail
+
+devices:
+  - ip: 10.1.1.1
+  - ip: 10.1.1.2
+  - ip: 10.1.1.3
