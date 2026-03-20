@@ -172,5 +172,5 @@ Full implementation walkthrough, design decisions, and key library explanations:
 
 ## Author
 
-**Romario Bennett** — Network & Security Engineer
+**Romario Bennett** - Network & Security Engineer
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/romario-bennett)
