@@ -2,8 +2,6 @@
 
 A production-grade Python tool for automating configuration backups across Cisco IOS devices via SSH. Supports concurrent execution, YAML-based inventory, timestamped output, and diff-based change detection.
 
-> **Note:** This repository contains the project structure, documentation, and inventory template. The full source is not publicly available. Read the companion article on Medium for a detailed walkthrough of the implementation and design decisions.
-
 ---
 
 ## Features
